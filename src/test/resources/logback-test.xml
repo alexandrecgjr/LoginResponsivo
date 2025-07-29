@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <!-- Suprimir logs do Selenium -->
+    <logger name="org.openqa.selenium" level="ERROR"/>
+    <logger name="io.github.bonigarcia" level="ERROR"/>
+    <logger name="org.openqa.selenium.devtools" level="ERROR"/>
+    <logger name="org.openqa.selenium.chromium" level="ERROR"/>
+
+    <root level="ERROR">
+        <appender-ref ref="STDOUT"/>
+    </root>
+</configuration> 

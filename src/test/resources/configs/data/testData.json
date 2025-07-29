@@ -1,0 +1,23 @@
+{
+  "default": {
+    "user": "tomsmith",
+    "password": "SuperSecretPassword!"
+  },
+  "invalid": {
+    "password": "123testando"
+  },
+  "urls": {
+    "login": "https://the-internet.herokuapp.com/login",
+    "secure": "https://the-internet.herokuapp.com/secure"
+  },
+  "messages": {
+    "success": "You logged into a secure area!",
+    "invalid_password": "Your password is invalid!",
+    "invalid_username": "Your username is invalid!"
+  },
+  "timeouts": {
+    "implicit": 5,
+    "explicit": 10,
+    "page_load": 30
+  }
+}
