@@ -1,0 +1,25 @@
+[
+  {
+    "name": "Falhas de Produto",
+    "matchedStatuses": ["failed"],
+    "messageRegex": ".*AssertionError.*"
+  },
+  {
+    "name": "Falhas de Teste",
+    "matchedStatuses": ["failed"],
+    "messageRegex": ".*Exception.*"
+  },
+  {
+    "name": "Falhas de Infraestrutura",
+    "matchedStatuses": ["broken"],
+    "messageRegex": ".*WebDriverException.*"
+  },
+  {
+    "name": "Testes Ignorados",
+    "matchedStatuses": ["skipped"]
+  },
+  {
+    "name": "Testes Passaram",
+    "matchedStatuses": ["passed"]
+  }
+] 

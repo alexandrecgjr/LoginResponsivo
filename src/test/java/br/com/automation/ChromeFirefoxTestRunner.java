@@ -18,6 +18,7 @@ import org.slf4j.LoggerFactory;
     glue = {"br.com.automation.steps"},
     plugin = {
         "pretty",
+        "io.qameta.allure.cucumber7jvm.AllureCucumber7Jvm",
         "html:target/cucumber-reports/report-chrome.html",
         "json:target/cucumber-reports/report-chrome.json",
         "junit:target/cucumber-reports/report-chrome.xml"
@@ -83,6 +84,7 @@ public class ChromeFirefoxTestRunner {
     glue = {"br.com.automation.steps"},
     plugin = {
         "pretty",
+        "io.qameta.allure.cucumber7jvm.AllureCucumber7Jvm",
         "html:target/cucumber-reports/report-firefox.html",
         "json:target/cucumber-reports/report-firefox.json",
         "junit:target/cucumber-reports/report-firefox.xml"

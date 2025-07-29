@@ -1,0 +1,10 @@
+{
+  "name": "Executor de Testes Automatizados",
+  "type": "Jenkins",
+  "url": "http://localhost:8080",
+  "buildOrder": 1,
+  "buildName": "Testes de Login #1",
+  "buildUrl": "http://localhost:8080/job/testes-login/1/",
+  "reportUrl": "http://localhost:8080/job/testes-login/1/allure/",
+  "reportName": "Relatório Allure em Português"
+} 

@@ -1,0 +1,32 @@
+[
+  {
+    "name": "Resumo dos Testes",
+    "type": "summary",
+    "title": "Resumo da Execução"
+  },
+  {
+    "name": "Cronologia",
+    "type": "timeline",
+    "title": "Cronologia de Execução"
+  },
+  {
+    "name": "Categorias",
+    "type": "categories",
+    "title": "Categorias de Falhas"
+  },
+  {
+    "name": "Comportamentos",
+    "type": "behaviors",
+    "title": "Comportamentos dos Testes"
+  },
+  {
+    "name": "Suites",
+    "type": "suites",
+    "title": "Suites de Teste"
+  },
+  {
+    "name": "Gráficos",
+    "type": "graphs",
+    "title": "Gráficos e Métricas"
+  }
+] 

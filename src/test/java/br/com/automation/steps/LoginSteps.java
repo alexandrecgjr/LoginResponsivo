@@ -2,12 +2,15 @@ package br.com.automation.steps;
 
 import br.com.automation.core.TestContext;
 import br.com.automation.pages.LoginPage;
+import br.com.automation.utils.AllureUtils;
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
 import io.cucumber.java.Scenario;
 import io.cucumber.java.pt.Dado;
 import io.cucumber.java.pt.Entao;
 import io.cucumber.java.pt.Quando;
+import io.qameta.allure.Allure;
+import io.qameta.allure.Step;
 import org.junit.Assert;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -35,17 +38,28 @@ public class LoginSteps {
         
         if (scenario.isFailed()) {
             logger.error("Cenário falhou: {}", scenario.getName());
+            AllureUtils.capturarScreenshotErro(context.getDriver(),
+                "Falha no cenário: " + scenario.getName());
+        } else {
+            AllureUtils.captureScreenshot(context.getDriver(),
+                "Sucesso - " + scenario.getName());
         }
+        
+        AllureUtils.anexarInformacoesNavegador(context.getDriver());
         
         context.finalizarDriver();
     }
     
     @Dado("que o usuário acessa a página de login")
+    @Step("Acessar página de login")
     public void queOUsuarioAcessaAPaginaDeLogin() {
+        Allure.addDescription("Acessa a página de login do sistema");
         loginPage.acessarPaginaLogin();
         Assert.assertTrue("Página de login não foi carregada corretamente", 
                          loginPage.isPaginaLoginCarregada());
         logger.info("Página de login acessada com sucesso");
+        
+        AllureUtils.captureScreenshot(context.getDriver(), "Página de Login");
     }
     
     @Quando("o usuário preenche o campo usuário com {string}")
