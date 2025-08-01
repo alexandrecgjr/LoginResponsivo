@@ -1,6 +1,6 @@
 # Login Responsivo - Projeto de Testes Automatizados
 
-Este projeto implementa testes automatizados para a funcionalidade de login do site "The Internet" (https://the-internet.herokuapp.com/login), utilizando Selenium WebDriver, Cucumber e Java.
+Este projeto implementa testes automatizados para a funcionalidade de login do site ["The Internet"](https://the-internet.herokuapp.com/login), utilizando Selenium WebDriver, Cucumber e Java.
 
 ##  Descrição
 
@@ -9,7 +9,7 @@ O objetivo deste projeto é validar a funcionalidade de login do site "The Inter
 
 ##  Tecnologias Utilizadas
 
-- **Java 11** 
+- **Java 11+** 
 - **Selenium WebDriver 4.15.0** 
 - **Cucumber 7.14.0** 
 - **JUnit 4.13.2** 
@@ -38,12 +38,7 @@ src/
         └── logback-test.xml        # Configurações de logging
 ```
 
-##  Como Executar os Testes
-
-### Pré-requisitos
-
-- Java JDK 11 ou superior instalado
-- Maven instalado e configurado
+##  Execução
 
 ### Configuração do Ambiente
 
